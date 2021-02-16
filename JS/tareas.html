@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tareas</title>
+</head>
+<body>
+    <script>
+        document.write('hola mundo');
+
+        var aleatorio = Math.floor(Math.random() * 10);
+        document.write(aleatorio);
+        /*no se ejecuta por que al quitar las comillas no se encuentra la variable como cadena de texto*/
+
+        var booleano = true;
+        var unNumero = 10;
+        var unNumeroDePuntoFlotante = 3.1416;
+        var unaCadenaDeTexto = "Esto es una prueba";
+
+        document.write(unNumero);
+        document.write("<br>");
+        document.write(unNumeroDePuntoFlotante);
+        document.write("<br>");
+        document.write(unaCadenaDeTexto);
+        document.write("<br>");
+
+        if (booleano === true) {
+            document.write("Esta variable es verdadera");
+        }
+        
+        var persona = {
+            nombre   : "Pepito",
+            apellido : "Conejo",
+            mostrar  : function() {
+                document.write("<br>Hola, soy " + this.nombre + " " + this.apellido + "<br>");
+            }
+        }
+
+        persona.mostrar();
+    </script>
+        </script>
+</body>
+</html>
