@@ -110,6 +110,45 @@
         var puedeAperturarCuenta = ((edad >= 18 || Tutor == true) && dinero >= 1000); 
         document.write("Aperturar cuenta: " + puedeAperturarCuenta)
 
+        var suma = 4+2; 
+        var resta = 4-2;
+        var producto = 4*2;
+        var división = 4/2;
+        var módulo = 5%2;
+
+        document.write("<br>Suma " + suma + "<br>");
+        document.write("Resta" + resta +"<br>");
+        document.write("Producto" + producto +"<br>");
+        document.write("División" + división + "<br>");
+        document.write("Módulo" + módulo + "<br>");
+
+        var almacen = 15;
+        document.write("<br>" + almacen++);
+        document.write("<br>" + almacen);
+
+        document.write("<br>");
+
+        var numeroEnTexto = parseInt("3.1416");
+        numeroEnTexto = numeroEnTexto + 10;
+        document.write(numeroEnTexto);
+
+        document.write("<br>");
+
+        var textoMuestra = "\u00A9 probando..."
+        document.write(textoMuestra);
+
+
+        document.write ('\\');
+
+        document.write("<br>");
+
+        var textoMuestra = "\u00BE probando..."
+        document.write(textoMuestra);
+        document.write("\\");
+
+        document.write("<br>");
+        var otraMuestra = "Esto es \u000Aotra prueba";
+        document.write(otraMuestra);
     </script>
 </body>
 </html>
