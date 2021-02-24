@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strings</title>
+</head>
+<body>
+    <script>
+        console.log("   *********        ***          *        *        ")
+        console.log("   *       *      *     *       ***      * *       ")
+        console.log("   *       *     *       *     *****    *   *      ")
+        console.log("   *       *     *       *       *     *     *     ")
+        console.log("   *       *     *       *       *    *       *    ")
+        console.log("   *       *     *       *       *     *     *     ")
+        console.log("   *       *     *       *       *      *   *      ")
+        console.log("   *       *      *     *        *       * *       ")
+        console.log("   *********        ***          *        *        ")
+
+        var Nombre = "Gladys"
+        var Edad = "16"
+        var GeneroMusical = "Pop"
+        document.write("Hola, soy " + Nombre + " tengo " + Edad + " años " + " y me gusta el " + GeneroMusical)
+
+        var TextoString = "kissy"
+        document.write("<br>" + "la longitud de su texto es de " + TextoString.length )
+
+        var nombre = prompt("¿Cuál es tu nombre?");
+        document.write("<br>" + "Mucho gusto " + nombre);
+
+        var número1 = parseInt(prompt("Ecribe un Número"));
+        var número2 = parseInt(prompt("Ecribe un Número"));
+
+        document.write("<br>Suma " + parseInt(número1 + número2) + "<br>");
+        document.write("Resta " + (número1 - número2) +"<br>");
+        document.write("Producto " + número1 * número2 +"<br>");
+        document.write("División " + número1 / número2 + "<br>");
+        document.write("Módulo " + número1 % número2 + "<br>");
+
+        var precio = prompt("El precio es ")
+        document.write("El precio con IVA es: " + precio * 1.16 )
+ 
+    </script>
+</body>
+</html>
