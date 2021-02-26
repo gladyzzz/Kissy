@@ -25,134 +25,174 @@
         var manoDelCPU = Math.floor(Math.random() * 5) + 1;
         
         document.write(manoDelJugador + " - " + manoDelCPU + "<br>");
+        
+        var PuntuaciónDelJugador = 0
+        var PuntuaciónDelaMáquina = 0
 
         switch (manoDelJugador) {
             case "1":
                 document.write("Elegiste Piedra")
                 if (manoDelCPU == 1) {
-                    document.write("<br> Empate!")
+                    alert ("<br> Empate!")
                     document.write("<br>")
                 }
 
                 if (manoDelCPU == 5) {
-                    document.write("<br> Tu ganas!")
+                    alert ("<br> Tu ganas!")
                     document.write("<br>")
+                    PuntuaciónDelJugador ++
                 }
 
                 if (manoDelCPU == 4) {
-                    document.write("<br> Tu ganas!")
+                    alert ("<br> Tu ganas!")
                     document.write("<br>")
+                    PuntuaciónDelJugador ++
                 }
 
                 if (manoDelCPU == 3) {
-                    document.write("<br> Tu pierdes!")
+                    alert ("<br> Tu pierdes!")
                     document.write("<br>")
+                    PuntuaciónDelaMáquina ++
                 }
 
                 if (manoDelCPU == 2) {
-                    document.write("<br> Tu pierdes!")
+                    alert ("<br> Tu pierdes!")
                     document.write("<br>")
+                    PuntuaciónDelaMáquina ++
                 }
+                alert ("Puntuación Del Jugador: " + PuntuaciónDelJugador + "\nPuntuaciónDelaMáquina: " + PuntuaciónDelaMáquina)
                 break;
             
             case "2":
                 document.write("Elegiste Papel")
                 if(manoDelCPU == 1) {
-                    document.write("<br> Tu ganas!")
+                    alert ("<br> Tu ganas!")
                     document.write("<br>")
+                    PuntuaciónDelJugador ++
                 }
                 if(manoDelCPU == 2) {
-                    document.write("<br> Empate!")
+                    alert ("<br> Empate!")
                     document.write("<br>")
                 }
                 if(manoDelCPU == 3) {
-                    document.write("<br> Tu pierdes!")
+                    alert ("<br> Tu pierdes!")
                     document.write("<br>")
+                    PuntuaciónDelaMáquina ++
                 }
                 if(manoDelCPU == 4) {
-                    document.write("<br> Tu pierdes!")
+                    alert ("<br> Tu pierdes!")
                     document.write("<br>")
+                    PuntuaciónDelaMáquina ++
                 }
                 if(manoDelCPU == 5) {
-                    document.write("<br> Tu ganas!")
+                    alert ("<br> Tu ganas!")
                     document.write("<br>")
+                    PuntuaciónDelJugador ++
                 }
+                alert ("Puntuación Del Jugador: " + PuntuaciónDelJugador + "\nPuntuaciónDelaMáquina: " + PuntuaciónDelaMáquina)
                 break;
             
             case "3":
                 document.write("Elegiste Tijera")
                 if(manoDelCPU == 1) {
-                    document.write("<br> Tu pierdes!")
+                    alert ("<br> Tu pierdes!")
                     document.write("<br>")
+                    PuntuaciónDelaMáquina ++
                 }
                 if(manoDelCPU == 2) {
-                    document.write("<br> Tu ganas!")
+                    alert ("<br> Tu ganas!")
                     document.write("<br>")
+                    PuntuaciónDelJugador ++
                 }
                 if(manoDelCPU == 3) {
-                    document.write("<br> Empate!")
+                    alert ("<br> Empate!")
                     document.write("<br>")
                 }
                 if(manoDelCPU == 4) {
-                    document.write("<br> Tu ganas!")
+                    alert ("<br> Tu ganas!")
                     document.write("<br>")
+                    PuntuaciónDelJugador ++
                 }
                 if(manoDelCPU == 5) {
-                    document.write("<br> Tu pierdes!")
+                    alert ("<br> Tu pierdes!")
                     document.write("<br>")
+                    PuntuaciónDelaMáquina ++
                 }
+                alert ("Puntuación Del Jugador: " + PuntuaciónDelJugador + "\nPuntuaciónDelaMáquina: " + PuntuaciónDelaMáquina)
                 break;
             
             case "4":
                 document.write("Elegiste Lagarto")
                 if(manoDelCPU == 1) {
-                    document.write("<br> Tu pierdes!")
+                    alert ("<br> Tu pierdes!")
                     document.write("<br>")
+                    PuntuaciónDelaMáquina ++
                 }
                 if(manoDelCPU == 2) {
-                    document.write("<br> Tu ganas!")
+                    alert ("<br> Tu ganas!")
                     document.write("<br>")
+                    PuntuaciónDelJugador ++
                 }
                 if(manoDelCPU == 3) {
-                    document.write("<br> Tu pierdes!")
+                    alert ("<br> Tu pierdes!")
                     document.write("<br>")
+                    PuntuaciónDelaMáquina ++
                 }
                 if(manoDelCPU == 4) {
-                    document.write("<br> Empate!")
+                    alert ("<br> Empate!")
                     document.write("<br>")
                 }
                 if(manoDelCPU == 5) {
-                    document.write("<br> Tu ganas!")
+                    alert ("<br> Tu ganas!")
                     document.write("<br>")
+                    PuntuaciónDelJugador ++
                 }
+                alert ("Puntuación Del Jugador: " + PuntuaciónDelJugador + "\nPuntuaciónDelaMáquina: " + PuntuaciónDelaMáquina)
                 break;
              case "5":
                 document.write("Elegiste Spock")
                 if(manoDelCPU == 1) {
                     document.write("<br> Tu ganas!")
                     document.write("<br>")
+                    PuntuaciónDelJugador ++
                 }
                 if(manoDelCPU == 2) {
-                    document.write("<br> Tu pierdes!")
+                    alert ("<br> Tu pierdes!")
                     document.write("<br>")
+                    PuntuaciónDelaMáquina ++
                 }
                 if(manoDelCPU == 3) {
-                    document.write("<br> Tu ganas!")
+                    alert ("<br> Tu ganas!")
                     document.write("<br>")
+                    PuntuaciónDelJugador ++
                 }
                 if(manoDelCPU == 4) {
-                    document.write("<br> Tu pierdes!")
+                    alert ("<br> Tu pierdes!")
                     document.write("<br>")
+                    PuntuaciónDelaMáquina ++
                 }
                 if(manoDelCPU == 5) {
-                    document.write("<br> Empate!")
+                    alert ("<br> Empate!")
                     document.write("<br>")
                 }
+                alert ("Puntuación Del Jugador: " + PuntuaciónDelJugador + "\nPuntuaciónDelaMáquina: " + PuntuaciónDelaMáquina)
                 break;
             default:
                 break;
         }
         }
+        if (PuntuaciónDelJugador > PuntuaciónDelaMáquina) {
+            alert ("Ganaste el Set")
+            setsGanadosJugador ++
+        } else{
+            alert ("Perdiste el set")
+            setsGanadosMáquina ++
+        }
+        }
+        if (setsGanadosJugador > setsGanadosMáquina) {
+            alert ("Ganaste la partida!")
+        }else {
+            alert ("Perdiste la partida!")
         }
     </script>
     
