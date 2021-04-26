@@ -10,17 +10,9 @@
         integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
 
         <style>
-        .card {
-            margin: 32px auto 16px; 
-        }
-
-        .col:last-child .card{
-            margin-bottom: 32px;
-        }
-
-        #crearFormulario {
-            display: none;
-        }
+             #crearFormulario {
+                display: none;
+            }
         </style>
 </head>
 
@@ -51,12 +43,10 @@
                         <div class="dropdown-divider"></div>
                         <a class="dropdown-item" href="#">Something else here</a>
                     </div>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
                 </li> -->
+
             </ul>
-                <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Crear</button>
+                <button id="crearBtn" class="btn btn-outline-light my-2 my-sm-0" type="submit" onclick="mostrarFormulario()">Crear</button>
         </div>
     </nav>
 
@@ -67,28 +57,6 @@
         </div>
     </div>
 
-    <div class="container">
-        <div class="row">
-            <div class="col">
-                <form id="crearFormulario">
-                    <div class="mb-3">
-                      <label for="exampleInputEmail1" class="form-label">Email address</label>
-                      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                      <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
-                    </div>
-                    <div class="mb-3">
-                      <label for="exampleInputPassword1" class="form-label">Password</label>
-                      <input type="password" class="form-control" id="exampleInputPassword1">
-                    </div>
-                    <div class="mb-3 form-check">
-                      <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                      <label class="form-check-label" for="exampleCheck1">Check me out</label>
-                    </div>
-                    <button type="submit" class="btn btn-primary">Submit</button>
-                  </form>
-            </div>
-        </div>
-    </div>
 
     <main>
         <div class="container" id="cards">
@@ -96,19 +64,15 @@
                 <div class="col">
                     <form id="crearFormulario">
                         <div class="form-group">
-                            <label for="formTitle">SnapShot a agregar</label>
+                            <label for="formTitle">Signo zodiacal</label>
                             <input type="text" class="form-control" id="formTitle">
                         </div>
-
-                        <div class="form-group">
-                            <label for="formImage">Poster de SnapShot</label>
-                            <input type="url" class="form-control" id="formImage" placeholder="Solo url's">
+                        <input type="url" class="form-control" id="formImage" placeholder="Solamente enlaces web">
                         </div>
-
                         <div class="form-group">
-                            <label for="exampleFormControlTextarea1">Descripcion de SnapShot</label>
-                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                          </div>
+                            <label for="formDescription">Descripción</label>
+                            <textarea class="form-control" id="formDescription" rows="3"></textarea>
+                        </div>
 
                           <button class="btn btn-success" type="submit" id="submitCrearFormulario">Enviar</button>
 
@@ -117,7 +81,7 @@
             </div>
         </div>
 
-    <div class="container">
+    <div class="container" id="cards">
         <div class="row">
             <div class="col">
                 <div class="card" style="width: 18rem;">
