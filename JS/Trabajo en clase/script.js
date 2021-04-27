@@ -9,6 +9,31 @@ function sumar (){
         
     }
 
+    function crearCards(){
+        var cards = document.querySelector('#cards .row')
+        cards.innerHTML = ''
+
+        if (signos) {
+            var listadoSignos = JSON.parse( signo )
+
+            for (var i = 0; i <listadoSignos.length; i++) {
+                var signos = listadoSignos[i]
+                var htmlCard = `
+                <div class="card" style="width: 18rem;">
+                <img src="${signo.imagen}" class="card-img-top" alt="$signo.titulo">
+                <div class="card-body">
+                    <h5 class="card-title">$signo.titulo</h5>
+                    <p class="card-text">$signo.descripcion</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+            `
+            cards.innerHTML += htmlCard
+            }
+        }
+    }
+
+    crearCards()
 
 var verFormulario = false
 
